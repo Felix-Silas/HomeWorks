@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Hello,"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/WelcomeBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="75dp"
+        android:text="USERNAME"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/UsernameInput"
+        android:layout_width="366dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="75dp"
+        android:text="PASSWORD"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/PasswordInput"
+        android:layout_width="366dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:inputType="textPassword">// 비밀번호 *로 만들기
+
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:backgroundTint="@color/white"
+        android:text="Forget Password?"
+        android:textColor="@color/black">
+
+    </Button>
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="60dp"
+        android:text="LOGIN"
+        android:backgroundTint="#2196F3">
+
+    </Button>
+
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:text="Create Account"
+        android:textColor="@color/black">
+
+    </Button>
+
+
+</LinearLayout>
