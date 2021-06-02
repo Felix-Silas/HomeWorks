@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/Hello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello,"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="36sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/WelcomeBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="36sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="240dp"
+            android:text="USERNAME"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/UsernameInput"
+            android:layout_width="375dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="260dp">
+        </EditText>
+
+        <TextView
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="380dp"
+            android:text="PASSWORD"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/PasswordInput"
+            android:layout_width="375dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="400dp"
+            android:inputType="textPassword">// 비밀번호 *로 만들기
+        </EditText>
+
+        <Button
+            android:id="@+id/Show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="390dp"
+            android:background="#00ff0000"
+            android:textColor="#2196F3"
+            android:text="Show" />
+
+        <Button
+            android:id="@+id/ForgetPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:background="#00ff0000"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="450dp"
+            android:text="Forget Password?"
+            android:textColor="#77000000"
+            android:textAllCaps="false"> //문자 대문자로만 나타날 떄
+        </Button>
+
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="360dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="550dp"
+            android:text="LOGIN"
+            android:backgroundTint="#2196F3">
+        </Button>
+
+        <Button
+            android:id="@+id/CreateAccount"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="640dp"
+            android:background="#00ff0000"
+            android:backgroundTint="@color/white"
+            android:text="Create Account"
+            android:textColor="#77000000"
+            android:textAllCaps="false"
+            >
+
+        </Button>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
