@@ -7,6 +7,8 @@ import android.widget.EditText;
 import android.view.View;
 import android.content.Intent;
 
+import java.util.logging.Logger;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,26 +16,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+    public void onClick_login(View v){
 
-        final EditText UsernameInput = (EditText) findViewById(R.id.UsernameInput);
-        final EditText PasswordInput = (EditText) findViewById(R.id.PasswordInput);
-        Button Login = (Button) findViewById(R.id.Login);
+        EditText text_id = (EditText)findViewById(R.id.editText_id);
+        EditText text_pw = (EditText)findViewById(R.id.editText_pw);
+        Button onClick_login = (Button)findViewById(R.id.onClick_login);
 
-        Login.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            String name = UsernameInput.getText().toString();
-            String password = PasswordInput.getText().toString();
+        String id = text_id.getText().toString();
+        String pw = text_pw.getText().toString();
 
-            Intent intent= new Intent(getApplicationContext(),LogActivity.class);
-            intent.putExtra("UsernameInput",name);
-            intent.putExtra("PasswordInput",password);
-            startActivity(intent);
+        Intent intent_01= new Intent(getApplicationContext(), LogActivity.class);
 
+        intent_01.putExtra("입력한 아이디",id);
+        intent_01.putExtra("입력한 비밀번호",pw);
 
-
-           }
-        });
+        startActivity(intent_01);
 
     }
 }
